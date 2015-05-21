@@ -13,7 +13,7 @@
 ## matrix; if they are different, then the stored inverse is set to NULL, later indicating to 
 ## 'CacheSolve' that a new inverse will have to be computed
 ##
-## Later on there are two functions to compare the time it takes to compute inverse of 
+## Later on there are two functions to compare the time (in seconds) it takes to compute inverse of 
 ## 'n' matrices, instead of the time to fetch the stored inverse 'n' times. 
 
 ####################################################################################
