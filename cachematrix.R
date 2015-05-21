@@ -13,8 +13,13 @@
 ## matrix; if they are different, then the stored inverse is set to NULL, later indicating to 
 ## 'CacheSolve' that a new inverse will have to be computed
 ##
-## Later on there are two functions to compare the time (in seconds) it takes to compute inverse of 
-## 'n' matrices, instead of the time to fetch the stored inverse 'n' times. 
+## Later on there are two functions to compare the time (in seconds) it takes to compute the 
+## inverse of ## 'n' matrices, instead of the time to fetch the stored inverse 'n' times. Both
+## function work on a 4 x 4 matrices. The difference is that the function 'loopNewMatrix' updates
+## the stored matrix every iteration, which forces the computation of the inverse, while
+## 'loopSameMatrix' always store the same matrix. 
+## In my machine it takes roughly 4 times as much to run the 'loopNewMatrix' when compared 
+## to running 'loopSameMatrix'.
 
 ####################################################################################
 ## Function: makeCacheMatrix
