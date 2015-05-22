@@ -103,6 +103,7 @@ cacheSolve <- function(x) {
 ##
 ####################################################################################
 loopNewMatrix<-function(n=100){
+  c<-makeCacheMatrix()
   z<-matrix(1:16,nrow=4,ncol=4)
   z[1,1]=100
   z[2,2]=42
@@ -125,6 +126,7 @@ loopNewMatrix<-function(n=100){
 ##
 ####################################################################################
 loopSameMatrix<-function(n=100){
+  c<-makeCacheMatrix()
   z<-matrix(1:16,nrow=4,ncol=4)
   z[1,1]=100
   z[2,2]=42
